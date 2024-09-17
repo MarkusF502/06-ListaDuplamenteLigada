@@ -176,8 +176,10 @@ void excluirPrimeiroElemento()
 		ultimo = NULL;
  }
 	else {
+		NO* aux = primeiro;
 		primeiro = primeiro->prox;
 		primeiro->ant - NULL;
+		free(aux);
 	}
 }
 
@@ -192,8 +194,10 @@ void excluirUltimoElemento()
 		ultimo == NULL;
 	}
 	else {
+		NO* aux = ultimo;
 		ultimo = ultimo->ant;
 		ultimo->prox = NULL;
+		free(aux);
 	}
 }
 
